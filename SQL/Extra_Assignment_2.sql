@@ -1,5 +1,13 @@
 SELECT * FROM sql_assignment1.trainee;
-use sql_assignment1
+use sql_assignment1;
+-- bai 2
+select TraineeID,Full_Name, Month(Birth_Date),Gender,Training_Class,Evaluation_Notes
+from trainee
+where ET_IQ + ET_Gmath >=20
+and ET_IQ >=8
+and ET_Gmath>=8
+and ET_English>=18
+order by Month(Birth_Date);
 -- bai 3
 Select Length(FullName),FullName,Email,Username FROM `account`
 order by Length(FullName) DESC

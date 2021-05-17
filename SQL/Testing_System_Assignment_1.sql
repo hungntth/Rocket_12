@@ -2,7 +2,7 @@ create database Testing_System_Assignment_1;
 use Testing_System_Assignment_1;
 CREATE TABLE Department (
     DepartmentID int primary key not null auto_increment,
-    DepartmentName varchar(255) not null unique
+    DepartmentName nvarchar(255) not null unique
 );
 CREATE TABLE Positionn (
     PositionID int primary key not null auto_increment,
@@ -64,7 +64,6 @@ Content text ,
 QuestionID int not null ,
 isCorrect boolean,
 foreign key (QuestionID) references Question(QuestionID)
-
 );
 
 create table Exam (
@@ -88,7 +87,7 @@ create table ExamQuestion(
 
 );
 
-INSERT INTO Department (DepartmentName) VALUES ('Sales Department'); 
+INSERT INTO Department (DepartmentName) VALUES ('Sales Department'),('Marketing Department');
 INSERT INTO Department (DepartmentName) VALUES ('Marketing Department'); 
 INSERT INTO Department (DepartmentName) VALUES ('Human Resource Department'); 
 INSERT INTO Department (DepartmentName) VALUES ('Purchase Department'); 
