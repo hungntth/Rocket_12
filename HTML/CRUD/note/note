@@ -1,0 +1,6 @@
+ajax dùng để làm việc với server, bao gồm
+post: đẩy đổi lên server để lưu lại.
+get: lấy tất cả các phần tử về.
+getID: lấy theo ID.
+put: đẩy thông tin đối tượng lên để sửa 1 đối tượng trên server.
+delete: xóa đối tượng.
